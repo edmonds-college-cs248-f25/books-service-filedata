@@ -58,7 +58,12 @@ app.get("/", (req, res) => {
     res.json({ categories });
   } else {
     const filtered = books.filter(b => b.category === category);
-    res.json({ books: filtered });
+    if (filtered.length > 0) {
+      res.json({ books: filtered });
+   } else
+   {
+     res.status(410).send('No books found for category ' + category);
+   }
   }
 });
 
