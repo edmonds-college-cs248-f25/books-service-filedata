@@ -1,0 +1,15 @@
+{
+  "name": "books-service",
+  "version": "1.0.0",
+  "description": "Simple API for CS 248 fetch() demo",
+  "main": "books-service.js",
+  "scripts": {
+    "start": "node books-service.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "engines": {
+  "node": ">=18"
+  } 
+}
